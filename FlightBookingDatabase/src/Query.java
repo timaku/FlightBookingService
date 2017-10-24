@@ -67,7 +67,7 @@ public class Query {
 					+ "ORDER BY actual_time ASC";
 	private PreparedStatement searchOneHopStatement;
 
-       // TODO: Add more queries here
+	// Add more queries here
 	private static final String DELETE_RESERVATION = "DELETE FROM RESERVATIONS WHERE rid = ? AND username = ?";
 	private PreparedStatement deleteReservationStatement;
 	
@@ -76,8 +76,7 @@ public class Query {
 	
 	private static final String PULL_FLIGHT_INFO = "SELECT * FROM FLIGHTS WHERE fid = ?";
 	private PreparedStatement pullFlightInfoStatement;
-	
-	
+
 	private static final String PULL_RESERVATIONS = "SELECT * FROM RESERVATIONS WHERE username = ?";
 	private PreparedStatement pullReservationsStatement;
 	
